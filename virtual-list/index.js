@@ -44,9 +44,17 @@ function re_render(firstIndex) {
   last_first = firstIndex
   // 删除所有已存在节点
   content.innerHTML = ''
-  // 结束结点下标
-  const endIndex = firstIndex + 10
-  for (let i = firstIndex; i < endIndex; i++) {
+  // 开始、结束结点下标
+  let start = firstIndex;
+  let endIndex = firstIndex + 10
+
+  // 渲染缓冲区，防止列表空白
+  if (firstIndex > 1)
+    start = firstIndex - 2
+  else
+    start = 0
+    
+  for (let i = start; i < endIndex; i++) {
     const el = document.createElement('li')
     el.innerHTML = `${arr[i].i}`
     el.style.paddingLeft = `${arr[i].range}px`
@@ -56,7 +64,7 @@ function re_render(firstIndex) {
   // 重新设置内容器高度(防止高度溢出)
   // content.style.height = `${inner_height - 50 * firstIndex}px`
   // 设置padding-top 显示当前位置元素
-  content.style.paddingTop = `${50 * firstIndex}px`
+  content.style.paddingTop = `${50 * start}px`
 }
 
 

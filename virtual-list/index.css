@@ -36,14 +36,10 @@ body {
 
 .content li {
   height: 3.125rem;
-  color: #FFF;
+  color: rgb(48, 44, 34);;
   font-weight: bold;
-  border: 1px solid rgba(48, 44, 34, 0.2);
-  background-color: #69550C;
-}
-
-.content li:nth-child(2n-1) {
-  background-color: #CEAA04;
+  border: 1px solid rgba(105, 85, 12, 0.8);
+  background-color: rgba(206, 170, 4, 0.8);
 }
 
 ::-webkit-scrollbar {
