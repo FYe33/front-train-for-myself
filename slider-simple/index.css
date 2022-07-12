@@ -24,7 +24,8 @@ body {
   border: 1px solid #E3B831;
   border-radius: .125rem;
 
-  background-color: #F0F0F0;
+  background-color: rgba(227, 184, 49, 0.5);
+
 }
 
 .slider-item {
