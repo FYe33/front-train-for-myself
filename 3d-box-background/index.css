@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.btn {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+
+  padding: .75rem 1.25rem;
+
+  cursor: pointer;
+
+  background-color: #E1C5AF;
+  border: #163954;
+  border-radius: .3125rem;
+  
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #FFF;
+
+  /* 按钮下侧阴影 */
+  box-shadow: 0 3px #F0A55B;
+  /* 模拟现实点击效果 */
+  z-index: 2;
+}
+
+.btn:active {
+  /* 点击后取消阴影以及进行位移 */
+  box-shadow: none;
+  transform: translateX(-50%) translateY(2px);
+}
+
+.container {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  /* 初始大小 */
+  width: 2000px;
+  height: 2000px;
+
+  transition: 0.5s ease;
+}
+
+.big {
+  /* 放大后的高宽差不能大于1个box的高宽 */
+  width: 2249.9999px;
+  height: 2249.9999px;
+}
+
+.big .box {
+  /* 添加class后进行旋转 */
+  transform: rotateZ(360deg);
+}
+
+.box {
+  background-image: url('./wlop.jpg');
+  background-repeat: no-repeat;
+  background-size: 2000px 2000px;
+
+  height: 250px;
+  width: 250px;
+
+  position: relative;
+  transition: .4s ease;
+}
+
+.box::after {
+  /* 盒子右侧阴影 */
+  content: '';
+  background-color: #C29635;
+
+  width: 15px;
+  height: 100%;
+
+  position: absolute;
+  top: 7.5px;
+  right: 0;
+  transform: translateX(100%) skewY(45deg);
+}
+
+.box::before {
+  /* 盒子下侧阴影 */
+  content: '';
+  background-color: #211B19;
+
+  width: 100%;
+  height: 15px;
+
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  transform: translateY(100%) skewX(45deg);
+}
