@@ -57,16 +57,16 @@ body {
   justify-content: space-around;
 
   /* 初始大小 */
-  width: 2000px;
-  height: 2000px;
+  width: 500px;
+  height: 500px;
 
   transition: 0.5s ease;
 }
 
 .big {
   /* 放大后的高宽差不能大于1个box的高宽 */
-  width: 2249.9999px;
-  height: 2249.9999px;
+  width: 624.9px;
+  height: 624.9px;
 }
 
 .big .box {
@@ -77,10 +77,10 @@ body {
 .box {
   background-image: url('./wlop.jpg');
   background-repeat: no-repeat;
-  background-size: 2000px 2000px;
+  background-size: 500px 500px;
 
-  height: 250px;
-  width: 250px;
+  height: 125px;
+  width: 125px;
 
   position: relative;
   transition: .4s ease;
