@@ -9,4 +9,8 @@
 部分 Train Project 取自 <a href="https://github.com/bradtraversy/50projects50days" target="_blank">50projects50days</a>
 
 ---
+<a href="https://fye33.github.io/front-train-for-myself/slider-simple/index.html" target="_blank">'slider-simple' DEMO</a>
+<a href="https://fye33.github.io/front-train-for-myself/virtual-list/index.html" target="_blank">'virtual-list' DEMO</a>
+<a href="https://fye33.github.io/front-train-for-myself/3d-box-background/index.html" target="_blank">'3d-box-background' DEMO</a>
+
 **~~Maybe will continue...~~**
